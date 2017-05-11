@@ -5,14 +5,14 @@ $conn = new Conexion;
 
 
 if ($conn->conectar()) {
-$nom=$_post["nombre"];
-$totusd=$_post["totalUsd"];
-$ano=$_post["ano"];
+$nom=$_POST["nombre"];
+$totalusd=$_POST["totalusd"];
+$ano=$_POST["ano"];
 
 
 
 
-$sql="INSERT INTO productos (nombre,totalusd,ano)values('$nom',$totusd,$ano')";
+$sql="INSERT INTO productos (nombre,totalusd,ano)values('$nom','$totalusd','$ano')";
     
 echo $sql;
 }
